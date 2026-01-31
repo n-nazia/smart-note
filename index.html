@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Note Assistant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2> Smart Note Assistant</h2>
+
+  <input type="text" id="title" placeholder="Title (auto-suggested)">
+  <textarea id="content" placeholder="Write your note here..."></textarea>
+  <div class="count" id="wordCount">Words: 0</div>
+
+  <button onclick="addNote()">Save Note</button>
+
+  <input type="text" id="search" placeholder="Search notes..." onkeyup="searchNotes()">
+
+  <div id="notes"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
